@@ -1,0 +1,4 @@
+/home/mosny/Desktop/cosmolattice/kination/CMakeFiles/cosmolattice.dir
+/home/mosny/Desktop/cosmolattice/kination/CMakeFiles/clean-cmake.dir
+/home/mosny/Desktop/cosmolattice/kination/CMakeFiles/edit_cache.dir
+/home/mosny/Desktop/cosmolattice/kination/CMakeFiles/rebuild_cache.dir

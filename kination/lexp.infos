@@ -1,0 +1,45 @@
+Parameters: 
+Important parameters:
+
+             evolver       VV2                 
+                tMax       500                 
+                  dt       0.05                
+                   N       32                  
+             withGWs       false               
+           expansion       true                
+     tOutputRareFreq       50                  
+                 kIR       0.75                
+       tOutputInfreq       20                  
+                  t0       0                   
+             kCutOff       4                   
+         tOutputFreq       20                  
+
+
+Other parameters:
+
+           tolerance       -1                  
+       print_headers       false               
+           deltaKBin       1                   
+         hdf5Spectra       true                
+     fixedBackground       false               
+     initial_momenta       6e23 0              
+     energy_snapshot       E_S_K               
+         tBackupFreq       -1                  
+          outputfile       ./                  
+              lambda       1e9                 
+            baseSeed       1924550654          
+               input       ../src/models/parameter-files/lexp.in
+             PS_type       1                   
+          PS_version       1                   
+       appendToFiles       false               
+     GWprojectorType       1                   
+                   q       1e14                
+  initial_amplitudes       5.6964e18 0         
+         tOutputVerb       5                   
+             OccNumb       false               
+    spectraVerbosity       0                   
+
+The simulation started on the d26 m2 y2025 around h14m47.
+It will be running on a grid of (1,1,1) cores.The simulation finished on the d26 m2 y2025 around h14m47.
+The timer indicates that it ran for 21.576s.
+As it ran on 1 cores, this corresponds to 0.00599333 core hours.
