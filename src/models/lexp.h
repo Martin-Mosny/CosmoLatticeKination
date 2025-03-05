@@ -49,7 +49,7 @@ namespace TempLat
  //...
 private:
 
-  double g,lambda, q;
+  double g,lambda, q, A;
 // Here are the declaration of the model specific parameters. They are 'private'
 // to force you using them only within your model and not outside.
 
@@ -79,6 +79,7 @@ private:
       // "lambda" and we specify it is a 'double'.
 
       q = parser.get<double>("q");
+      A = parser.get<double>("potential_amplitude");
       // In the same way, we declare an input parameter 'q'.
 
       //For convenience, we also define g as a function of lambda and q.
@@ -140,7 +141,7 @@ private:
     // to define different function with the same name. The 'auto' keyword lets the compiler
     // figure out on itself what is the actual return type of the function.
     {
-        return 0 * 0.25 * exp(-q * fldS(0_c));
+        return A * exp(-q * fldS(0_c));
         // Some notations.  The scalar fields are stored in a collection called 'fldS'.
         // The scalar fields are labelled  from 0 to Ns-1. The field say number 1 is
         // accessed through the syntax 'fldS(0_c)'. The function 'pow<N>(x)'. Works with the
@@ -174,7 +175,7 @@ private:
     // per scalar field (2 in this case).  The integer in Tag<0> tells you the field with
     // respect to which you are defining the derivative of the potential of.
     {
-      return   -0 *0.25 * q * exp(-q * fldS(0_c)) ;
+      return   -A * q * exp(-q * fldS(0_c)) ;
     }
 	
 	
@@ -188,7 +189,7 @@ private:
     // in the same fashion the second derivatives of the potential
     // (put 'return 0' if you are not using this feature).
     {
-      return  0 * 0.25 * q * q * exp(-q * fldS(0_c)) ;
+      return  A * q * q * exp(-q * fldS(0_c)) ;
     }
 
 		

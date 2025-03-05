@@ -181,9 +181,9 @@ namespace TempLat {
         TempLatArray<SU2DoubletWrapper<T,T,T,T>,NSU2Doublet> masses2SU2Doublet;  // SU2 doublet
 
 
-        T alpha, fStar, omegaStar; //Rescalings for program variable definitions: (alpha,f_*,w_*)
+        T alpha, fStar, omegaStar, wave_amplitude, number_of_waves; //Rescalings for program variable definitions: (alpha,f_*,w_*)
 
-        T dx, kIR, dt;  //Length element and time step
+        T dx, kIR, dt, N;  //Length element and time step
 
         // name of the model
         std::string name;
@@ -197,6 +197,8 @@ namespace TempLat {
           isInitialized(toolBox->initializeFFT<T>()),
           fldS("scalar",toolBox,par),
           piS("pi_scalar",toolBox,par),
+          wave_amplitude(parser.get<double>("wave_amplitude")),
+          number_of_waves(parser.get<int>("number_of_waves")),
           fldCS("cmplx_scalar",toolBox,par),
           piCS("pi_cmplx_scalar",toolBox,par),
           fldSU2Doublet("SU2Doublet",toolBox,par),
@@ -210,6 +212,7 @@ namespace TempLat {
           kIR(par.getKIR()),
           dt(pDt),
           name(pName),
+          N(parser.get<int>("N")),
           fldGWs(parser.get<bool>("withGWs", false) ? std::make_unique<FieldCollection<Field, T, 6, true>>("fldGWs", toolBox, par) : nullptr),
           piGWs( parser.get<bool>("withGWs", false) ? std::make_unique<FieldCollection<Field, T, 6, true>>("piGWs", toolBox, par) : nullptr)
           {

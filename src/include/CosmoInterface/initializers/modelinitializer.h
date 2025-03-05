@@ -9,7 +9,7 @@
 
 #include "CosmoInterface/initializers/fluctuationsgenerator.h"
 #include "CosmoInterface/initializers/scalefactorinitializer.h"
-#include "CosmoInterface/initializers/scalarsingletinitializer.h"
+#include "CosmoInterface/initializers/scalarwaveinitializer.h"
 #include "CosmoInterface/initializers/gwsinitializer.h"
 #include "CosmoInterface/initializers/u1initializer.h"
 #include "CosmoInterface/initializers/su2initializer.h"

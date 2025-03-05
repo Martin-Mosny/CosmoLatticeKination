@@ -758,7 +758,7 @@ CMakeFiles/cosmolattice.dir/src/cosmolattice.cpp.o
  /home/mosny/Desktop/cosmolattice/src/include/TempLat/lattice/measuringtools/radialprojector.h
  /home/mosny/Desktop/cosmolattice/src/include/TempLat/lattice/measuringtools/projectionhelpers/kbins.h
  /home/mosny/Desktop/cosmolattice/src/include/TempLat/util/cstyletime.h
- /home/mosny/Desktop/cosmolattice/src/include/CosmoInterface/initializers/scalarsingletinitializer.h
+ /home/mosny/Desktop/cosmolattice/src/include/CosmoInterface/initializers/scalarwaveinitializer.h
  /home/mosny/Desktop/cosmolattice/src/include/CosmoInterface/initializers/gwsinitializer.h
  /home/mosny/Desktop/cosmolattice/src/include/CosmoInterface/initializers/u1initializer.h
  /home/mosny/Desktop/cosmolattice/src/include/CosmoInterface/initializers/su2initializer.h

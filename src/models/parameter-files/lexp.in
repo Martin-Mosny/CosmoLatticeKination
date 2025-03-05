@@ -8,17 +8,17 @@ evolver = VV2
 #Latticels
 
 N = 32
-dt = 0.05
+dt = 0.01
 kIR = 0.75
 
 #Times
-tOutputFreq = 20
-tOutputInfreq = 20
-tOutputRareFreq = 50
-tMax = 500
+tOutputFreq = 0.1
+tOutputInfreq = 2
+tOutputRareFreq = 5
+tMax = 1500
 energy_snapshot = E_S_K
 hdf5Spectra = true
-
+save_dir = ./hdf5/
 
 #Spectra options
 PS_type = 1
@@ -30,9 +30,12 @@ withGWs = false
 
 #IC
 kCutOff = 4
-initial_amplitudes = 5.6964e18 0  # homogeneous amplitudes in GeV
-initial_momenta = 6e23 0   # homogeneous amplitudes in GeV2
+initial_amplitudes = 5.6964e17 0  # homogeneous amplitudes in GeV
+initial_momenta = 1.3e26 0   # homogeneous amplitudes in GeV2
 
 #Model Parameters
+wave_amplitude = 3.17e17  # amplitude of the initial wave
+number_of_waves = 2         # number of oscillations in the domain
 lambda = 1e9
-q = 1e14
+potential_amplitude = 0.05
+q = 0.8577

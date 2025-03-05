@@ -757,7 +757,7 @@ CMakeFiles/cosmolattice.dir/src/cosmolattice.cpp.o: /home/mosny/Desktop/cosmolat
   /home/mosny/Desktop/cosmolattice/src/include/TempLat/lattice/measuringtools/radialprojector.h \
   /home/mosny/Desktop/cosmolattice/src/include/TempLat/lattice/measuringtools/projectionhelpers/kbins.h \
   /home/mosny/Desktop/cosmolattice/src/include/TempLat/util/cstyletime.h \
-  /home/mosny/Desktop/cosmolattice/src/include/CosmoInterface/initializers/scalarsingletinitializer.h \
+  /home/mosny/Desktop/cosmolattice/src/include/CosmoInterface/initializers/scalarwaveinitializer.h \
   /home/mosny/Desktop/cosmolattice/src/include/CosmoInterface/initializers/gwsinitializer.h \
   /home/mosny/Desktop/cosmolattice/src/include/CosmoInterface/initializers/u1initializer.h \
   /home/mosny/Desktop/cosmolattice/src/include/CosmoInterface/initializers/su2initializer.h \
@@ -1652,6 +1652,8 @@ CMakeFiles/cosmolattice.dir/src/cosmolattice.cpp.o: /home/mosny/Desktop/cosmolat
 
 /usr/include/x86_64-linux-gnu/sys/select.h:
 
+/home/mosny/Desktop/cosmolattice/src/include/CosmoInterface/initializers/scalarwaveinitializer.h:
+
 /home/mosny/Desktop/cosmolattice/src/include/CosmoInterface/evolvers/kernels/su2doubletkernels.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
@@ -1855,8 +1857,6 @@ CMakeFiles/cosmolattice.dir/src/cosmolattice.cpp.o: /home/mosny/Desktop/cosmolat
 /usr/include/x86_64-linux-gnu/bits/types.h:
 
 /usr/include/x86_64-linux-gnu/bits/signal_ext.h:
-
-/home/mosny/Desktop/cosmolattice/src/include/CosmoInterface/initializers/scalarsingletinitializer.h:
 
 /usr/include/c++/12/bits/this_thread_sleep.h:
 
